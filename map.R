@@ -8,6 +8,7 @@ query <- as.data.frame(read.table("LD.txt", header = FALSE, sep = "\t", stringsA
 #dplyr::between()
 query$V1 <- factor(query$V1, levels = c("chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr8", "chr18"))
 #check wheather the values in coloumn are unique or not
+# for me V2 is start and V3 was end
 table(duplicated(query$V3)) 
 # if lenght of unique is equal to the no. of rows then no duplicated values.
 length(unique(query$V3))
