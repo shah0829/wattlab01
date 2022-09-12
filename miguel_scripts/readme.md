@@ -1,0 +1,2 @@
+- `checkMd5sum.R` is for checking the inegrity of the downloaded files.
+- `raw_scripts.R` is for __running expeimental code__ to get to the final scripts.
